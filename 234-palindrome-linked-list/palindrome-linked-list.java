@@ -17,6 +17,10 @@ class Solution {
             slow = slow.next;
             fast = fast.next.next;
         }
+        if (fast != null) { // odd length
+            slow = slow.next;
+        }
+        
         ListNode middlenode = reverseList(slow); 
         slow = head;
         ListNode p2 = middlenode;
