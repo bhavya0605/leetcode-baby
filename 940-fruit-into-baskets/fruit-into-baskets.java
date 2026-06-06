@@ -15,7 +15,7 @@ class Solution {
                 left++;
 
             }
-            len = Math.max(len,i-left+1);
+             len = Math.max(len,i-left+1);
         }
         return len == 0 ? 1 : len;
     }
